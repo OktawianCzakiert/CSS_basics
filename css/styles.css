@@ -1,0 +1,11 @@
+h2 {
+  color: green;
+  font-size: 32px;
+  padding: 10px;
+}
+
+.title {
+  color: brown;
+  font-size: small;
+  padding: 100px;
+}
