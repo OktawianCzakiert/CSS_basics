@@ -94,7 +94,7 @@ console.log(header);
 console.log(header2);
 
 // Zadanie 4 - JS
-// Utwórz nowy element H2 w sekcji pierwszej oraz nadaj tekst dla tego
+// Utwórz nowy element H2 oraz nadaj tekst dla tego
 // elementu za pomoca el.textContent = 'text'
 // - wypisz utworzony element w konsoli
 
@@ -109,3 +109,55 @@ console.log(el);
 const sect = document.querySelector(".section1");
 
 sect.append(el);
+
+// Zadanie 6 - JS
+// Usun utworzony w poprzednim zadaniu element z HTML
+
+//usuwanie elementu
+el.remove();
+
+// ZDARZENIE - CLICK
+
+const getAlert = () => {
+  console.log("Zdarzenie CLICK!");
+};
+
+const button = document.querySelector(".primary-btn");
+
+// I WERSJA
+button.addEventListener("click", getAlert);
+
+//usunięcie daneg zdarzenia z funkcją
+button.removeEventListener("click", getAlert);
+
+//II wersja
+
+button.addEventListener("click", () => {
+  alert("alert button po click!");
+});
+
+// ZDARZENIE - CHANGE
+
+const firstNameInput = document.querySelector("#first-name");
+const onChange = (event) => {
+  console.log(event.target.value);
+};
+
+firstNameInput.addEventListener("change", onChange);
+
+// ZDARZENIE - SUBMIT
+// pobieranie formularza
+const form = document.querySelector("#my-form");
+
+//problem z pobieraniem wartości
+const formInputName = document.querySelector("#new-name");
+
+//tworzenie funkcji
+const onSubmit = (event) => {
+  // resetuje domyślne zachowanie formularza - usuwa odświezanie strony
+  event.preventDefault();
+  console.log("Działa metoda SUBMIT");
+  console.log(formInputName.value);
+};
+
+form.addEventListener("submit", onSubmit);
