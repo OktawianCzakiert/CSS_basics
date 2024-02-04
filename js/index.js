@@ -116,6 +116,26 @@ sect.append(el);
 //usuwanie elementu
 el.remove();
 
+// Zadanie 7,8,9 - JS
+// Zadanie - click
+// Utworz przycisk w html oraz nadaj mu id
+// - Pobierz element w JS
+// - Napisz prosta funkcje strzalkowa która wypisuje tekst w konsoli
+// - Dodaj funkcje na event click do pobranego przycisku
+
+// Zadanie - change
+// Utworz input w HTML oraz nadaj mu ID
+// - Pobierz element w JS oraz przypisz go do zmiennej
+// - Napisz funkcje która pobiera wartosc elementu i wyswietla w
+// konsoli
+// - Dodaj event podczas zmiany wartosci do inputa wraz z funkcja
+
+// Zadanie - submit
+// Utworz formularz z jednym inputem oraz przyciskiem z typem submit
+// - Pobierz formularz w JS
+// - Utworz funkcje która pobierze oraz wyswietli dane z formularza
+// - Dodaj funkcje do formularza wywolana na event submit
+
 // ZDARZENIE - CLICK
 
 const getAlert = () => {

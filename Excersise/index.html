@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/index.js" defer></script>
+  </head>
+  <body>
+    <section>
+      <h2>Zaczytywanie uzytkowników</h2>
+      <br />
+      <button id="form-btn">Download all data</button><br /><br />
+    </section>
+    <section>
+      <h2>Wyszukiwanie uzytkownika</h2>
+      <br />
+      <form id="my-form">
+        <input type="number" placeholder="Id" id="number" min="0" max="100" />
+        <button type="submit" id="submit-btn">Search</button>
+      </form>
+    </section>
+    <br />
+    <section>
+      <h2>Update uzytkownika</h2>
+      <br />
+      <form id="update-form">
+        <input
+          type="number"
+          placeholder="Id"
+          id="id_update"
+          min="0"
+          max="100"
+        />
+        <input type="text" placeholder="Enter new name" id="name" />
+        <input type="text" placeholder="Enter new lastname" id="lastname" />
+        <button type="submit" id="submit-btn2">Update</button>
+      </form>
+    </section>
+    <br />
+    <section>
+      <h2>Dodawanie uzytkownika</h2>
+      <br />
+      <form id="add-form">
+        <input
+          type="text"
+          placeholder="Enter new name"
+          id="new_name"
+          required="True"
+        />
+        <input
+          type="text"
+          placeholder="Enter new lastname"
+          id="new_lastname"
+          required="True"
+        />
+        <button type="submit" id="submit-btn2">Add new</button>
+      </form>
+    </section>
+    <section>
+      <h2>Lista uzytkowników:</h2>
+      <ul id="uzytkownicy"></ul>
+      <br />
+    </section>
+  </body>
+</html>

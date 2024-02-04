@@ -1,0 +1,49 @@
+<!-- Zadania podsumowujące zdarzenia DOM
+1. utwórz pusta liste <ul> w pliku index.html i nadaj mu odpowiednie ID
+- Utwórz funkcje która tworzy liste 5 elementów z tablicy zdefiniowanej oraz przypisanej do zmiennej "list"
+- utwórz przycisk "generuj liste" z ID
+- pobierz element w index.js
+- nadaj event listener na ten przycisk tak aby po wcisnieciu wywolywalo nam funkcje generowania listy
+
+2. Do generowanego elementu listy dodaj przycisk "usun" który bedzie mial przypisany event listener do 
+usuwania aktualnego elementu
+
+3. Utwórz formularz który przechwytuje 4 pola (dowolne) i nadaj mu ID
+- pobierz formularz w index.js
+- utwórz funkcje która pobiera wszystkie wybrane pola i wyswietla je w konsoli
+- dodaj event listener na formularzu który wywoluje funkcje z pobieraniem danych -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/index_DOM.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <button id="generatelist">Generuj listę</button>
+        <ul id="list">
+
+        </ul>
+    </section>
+    <section>
+        <form id="our-form">
+            <input id="first-name" placeholder="imię">
+            </br>
+            <input id="surname" placeholder="nazwisko">
+            </br>
+            <input id="age" placeholder="wiek">
+            </br>
+            <input id="weight" placeholder="waga">
+            </br>
+            <button id="submit-button" type="submit">Wyślij</button>
+        </form>
+    </section>
+</body>
+
+</html>
