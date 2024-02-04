@@ -4,8 +4,67 @@ h2 {
   padding: 10px;
 }
 
-.title {
+p {
+  color: blueviolet;
+}
+
+.test-class {
+  color: aqua;
+}
+
+#test-id {
+  color: chartreuse;
+}
+
+.headline {
   color: brown;
-  font-size: small;
+  background-color: palegoldenrod;
   padding: 100px;
+}
+
+.big {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.wrapper {
+  background-color: bisque;
+}
+
+.wrapper .subheadline {
+  color: blue;
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+.primary-btn {
+  display: block;
+  margin: 10px auto;
+  transition: 0.5s;
+}
+
+.primary-btn:hover {
+  background-color: red;
+  transform: scale(1.5);
+}
+
+.primary-input {
+  margin: 0 auto;
+  display: block;
+  max-width: 300px;
+}
+
+.primary-input:focus {
+  background-color: aqua;
+}
+
+.primary-link {
+  display: block;
+  margin: 20px auto;
+  padding: auto;
+}
+
+.primary-link:active {
+  color: blueviolet;
+  font-size: larger;
 }

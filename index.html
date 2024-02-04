@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
     <title>Document</title>
+    <script src="./js/index.js" defer></script>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <style type="text/css">
@@ -14,16 +15,40 @@
     }
   </style>
   <body>
-    <section>
+    <section class="section1">
       <h1 style="color: red; font-size: 24px">
         Ten tekst zawiera styl za pośrednictwem wbudowanego stylu
       </h1>
       <h2>
         Ten tekst zawiera styl za pośrednictwem zewnętrznych arkuszy stylów
       </h2>
-      <h2 class="title">
+      <h2 class="headline big">
         Ten tekst zawiera styl za pośrednictwem klasy i zewnętrznych arkuszy
         stylów
+      </h2>
+    </section>
+    <section class="wrapper">
+      <h2 class="subheadline">Sekcja nr 1</h2>
+      <p class="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam facilis
+        error assumenda odio magni totam suscipit, ea consequuntur alias
+        cupiditate iusto tenetur iure dolorem quos. Minima accusantium iusto
+        fuga maxime?
+      </p>
+    </section>
+    <section>
+      <h2>Pseudoklasy</h2>
+      <button class="primary-btn">Kliknij mnie</button><br />
+      <label for="first-name" class="primary-input"
+        >Imię <input type="text" id="first-name" /><br />
+      </label>
+      <a href="https://google.com" class="primary-link">Google </a>
+    </section>
+
+    <section>
+      Stylowanie - specyficzność
+      <h2>
+        <p class="test-class" id="test-id">Testujemy kolor</p>
       </h2>
     </section>
   </body>
@@ -45,3 +70,26 @@ Zewnetrzny arkusz styli - zadanie - Utwórz plik styles.css w
 folderze repozytorium - Utwórz sekcje z nagłówkiem (h2) zewnetrzny arkusz styli
 - Dzięki nazwie selektora nadaj inny kolor (np . Red , green itp .) dla
 nagłówka -->
+
+<!-- Zadanie 4 - css
+Selektor klasy - zadanie
+Nadaj kilka klas w pliku html, następnie za pomocą selektora
+klasy nadaj style dla tych elementów dla których zostały
+dopisane klasy (2,3 max) -->
+
+<!-- Zadanie 5 - css
+Pseudoklasy - zadanie
+- Utwórz sekcje w której utworzysz przycisk, input oraz link (href="#")
+- Nadaj style dzieki pseudoklasie:
+- Przycisk – hover
+- Input – focus
+- Link - active -->
+
+<!-- Zadanie 6 - css
+Utwórz sekcje z nagłówkiem (h2) oraz akapitem
+- Dla akapitu nada j id oraz klase
+- W pliku styles.css zapisz 3 style z 3 roznymi kolorami
+- Za pomoca nazwy selektora
+- Za pomoca klasy
+- Za pomoca identy fikatora
+Zobacz który z nich ma priorytet -->
